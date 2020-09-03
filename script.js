@@ -5,57 +5,6 @@ const quoteButton = document.querySelector(".quote-button");
 let currentQuote = 0;
 let previousQuote = 4;
 
-// quote storage
-var quotePool = [
-  {
-    text: "Живи как можешь, раз нельзя как хочется.",
-    author: "Цецилий Стаций",
-    number: 0
-  },
-  {
-    text: "Я устал, я мухожук",
-    author: "Ельцин",
-    number: 1
-  },
-  {
-    text: "Дедушка Ленин хороший был вождь",
-    author: "Летов",
-    number: 2
-  },
-  {
-    text: "Я устал, я Ельцин",
-    author: "мухожук",
-    number: 3
-  },
-  {
-    text: "Сделаю как-нибудь",
-    author: "Даня",
-    number: 4
-  },
-  {
-    text: "Я доем",
-    author: "Дед",
-    number: 5
-  },
-  {
-    text: "Чертовски хороший кофе!.. И горячий!",
-    author: "Дейл Купер",
-    number: 6
-  },
-  {
-    text:
-      "Здесь Паша Эмильевич, обладавший сверхъестественным чутьем, понял, что сейчас его будут бить, может быть, даже ногами.",
-    author: "«12 стульев», Ильф и Петров",
-    number: 7
-  },
-  {
-    text:
-      "Зуб даю, двигатель экономического чуда есть осознание того, что и в газоотводной трубке над стволом также проживает Будда.",
-    author: "«Дзен и искусство ухода за АК-47», 2h Company",
-    number: 8
-  }
-];
-
 // random with lowest inclusive
 function getRandomInt(min, max) {
   min = Math.ceil(min);
