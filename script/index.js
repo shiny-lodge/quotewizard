@@ -1,6 +1,6 @@
-const quoteElement = document.querySelector(".quote");
-const quoteAuthor = document.querySelector(".quote-author");
-const quoteButton = document.querySelector(".quote-button");
+const quoteElement = document.querySelector(".quotes__text");
+const quoteAuthor = document.querySelector(".quotes__author");
+const quoteButton = document.querySelector(".quotes__button");
 
 let currentQuote = 0;
 let previousQuote = 4;
@@ -21,21 +21,22 @@ function countProperties(obj) {
   return count;
 }
 
-// click handler
-function handleClick() {
+function getRandomQuote() {
   let quotesNumber;
   let randomQuoteNumber;
   do {
-    console.log(`Let's do it!`);
     quotesNumber = countProperties(quotePool);
-    console.log(`There are ${quotesNumber} quotes`);
     randomQuoteNumber = getRandomInt(0, quotesNumber);
-    console.log(`I pick quote #${randomQuoteNumber}`);
   } while (
     randomQuoteNumber === currentQuote ||
     randomQuoteNumber === previousQuote
   );
+  return randomQuoteNumber;
+}
 
+// click handler
+function handleClick() {
+  let randomQuoteNumber = getRandomQuote();
   previousQuote = currentQuote;
   currentQuote = randomQuoteNumber;
 

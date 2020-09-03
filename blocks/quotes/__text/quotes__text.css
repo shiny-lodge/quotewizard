@@ -1,0 +1,9 @@
+.quotes__text {
+  margin: 18px auto 0;
+  background-color: black;
+  color: wheat;
+  width: 480px;
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 1.2;
+}

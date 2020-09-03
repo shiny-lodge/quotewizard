@@ -1,0 +1,18 @@
+.quotes__button {
+  margin: 18px auto 0;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: wheat;
+  background-color: black;
+  box-shadow: 4px 4px wheat;
+}
+
+.quotes__button:hover {
+  color: salmon;
+  transition: color 0.3s;
+}
+.quotes__button:active {
+  color: red;
+}

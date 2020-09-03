@@ -1,0 +1,7 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  background-color: salmon;
+  margin: 0;
+  font-family: "Century Gothic", Helvetica, sans-serif;
+}

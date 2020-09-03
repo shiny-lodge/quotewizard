@@ -1,0 +1,11 @@
+.quotes__author {
+  margin: 6px auto 0;
+  width: 480px;
+  text-align: end;
+  font-style: italic;
+  padding: 0 10px;
+  background-color: wheat;
+  color: black;
+  font-size: 18px;
+  line-height: 1.2;
+}

@@ -3,20 +3,25 @@
   <head>
     <title>Tsytatnic</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="pages/index.css" />
   </head>
-  <h1 class="header">TSYTATNIC</h1>
+  <header class="header">
+    <h1 class="header__title">TSYTATNIC</h1>
+  </header>
 
-  <p class="quotation-marks">
-    « »
-  </p>
-  <button class="quote-button">Другая цитата</button>
-  <blockquote class="quote">
-    Живи как можешь, раз нельзя как хочется.
-  </blockquote>
-  <p class="quote-author">Цецилий Стаций</p>
+  <section class="quotes">
+    <p class="quotes__quotation-marks">
+      « »
+    </p>
+    <button class="quotes__button">Другая цитата</button>
+    <blockquote class="quotes__text">
+      Живи как можешь, раз нельзя как хочется.
+    </blockquote>
+    <p class="quotes__author">Цецилий Стаций</p>
+  </section>
+
+  <script src="script/index.js"></script>
+  <script src="script/quotes-pool.js"></script>
+
   <body class="page"></body>
-
-  <script src="script.js"></script>
-  <script src="quotes-pool.js"></script>
 </html>
