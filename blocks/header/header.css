@@ -1,7 +1,8 @@
 @import url("__title/header__title.css");
 
 .header {
-  margin: 48px auto 0;
-  background-color: black;
+  margin: 48px 0 0;
+  background-color: darkcyan;
   padding: 0 10px;
+  text-align: center;
 }

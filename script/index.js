@@ -1,6 +1,6 @@
-const quoteElement = document.querySelector(".quotes__text");
-const quoteAuthor = document.querySelector(".quotes__author");
-const quoteButton = document.querySelector(".quotes__button");
+const quoteElement = document.querySelector(".card__quote-text");
+const quoteAuthor = document.querySelector(".card__quote-author");
+const cardBackFace = card.querySelector(".card__face_side_back");
 
 let currentQuote = 0;
 let previousQuote = 4;
@@ -21,6 +21,7 @@ function countProperties(obj) {
   return count;
 }
 
+// gets random quote
 function getRandomQuote() {
   let quotesNumber;
   let randomQuoteNumber;
@@ -34,14 +35,18 @@ function getRandomQuote() {
   return randomQuoteNumber;
 }
 
+// change quote text and author
+function changeText() {
+  quoteElement.textContent = quotePool[currentQuote].text;
+  quoteAuthor.textContent = quotePool[currentQuote].author;
+}
+
 // click handler
 function handleClick() {
   let randomQuoteNumber = getRandomQuote();
   previousQuote = currentQuote;
   currentQuote = randomQuoteNumber;
-
-  quoteElement.textContent = quotePool[currentQuote].text;
-  quoteAuthor.textContent = quotePool[currentQuote].author;
+  changeText();
 }
 
-quoteButton.addEventListener("click", handleClick);
+cardBackFace.addEventListener("click", handleClick);
