@@ -3,16 +3,12 @@
 @import url("__quote-text/card__quote-text.css");
 @import url("__quote-author-container/card__quote-author-container.css");
 @import url("__quote-author/card__quote-author.css");
+@import url("__container/card__container.css");
 
 .card {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  transition: transform 0.8s;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-}
-
-.card.is-flipped {
-  transform: rotateY(180deg);
+  margin: 0 auto;
+  width: 240px;
+  height: 400px;
+  padding: 0;
+  perspective: 1000px;
 }
