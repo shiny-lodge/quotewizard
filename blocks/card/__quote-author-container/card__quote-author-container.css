@@ -1,0 +1,15 @@
+.card__quote-author-container {
+  background-color: darkcyan;
+  color: wheat;
+  font-style: italic;
+  display: flex;
+  text-align: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  border-bottom: 3px solid wheat;
+  border-left: 3px solid wheat;
+  border-right: 3px solid wheat;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

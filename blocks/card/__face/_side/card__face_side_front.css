@@ -1,0 +1,5 @@
+.card__face_side_front {
+  background-color: black;
+  color: white;
+  position: absolute;
+}

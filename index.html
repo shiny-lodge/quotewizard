@@ -9,19 +9,32 @@
     <h1 class="header__title">TSYTATNIC</h1>
   </header>
 
-  <section class="quotes">
-    <p class="quotes__quotation-marks">
-      « »
-    </p>
-    <button class="quotes__button">Другая цитата</button>
-    <blockquote class="quotes__text">
-      Живи как можешь, раз нельзя как хочется.
-    </blockquote>
-    <p class="quotes__author">Цецилий Стаций</p>
+  <section class="main">
+    <div class="card">
+      <div class="card__face card__face_side_front">
+        <div class="card__quote-text-container">
+          <blockquote class="card__quote-text">
+            Тем и страшны, что нету вас милей.
+          </blockquote>
+        </div>
+        <div class="card__quote-author-container">
+          <p class="card__quote-author">Борис Рыжий</p>
+        </div>
+      </div>
+      <div class="card__face card__face_side_back"></div>
+    </div>
   </section>
 
+  <script src="script/flip.js"></script>
   <script src="script/index.js"></script>
   <script src="script/quotes-pool.js"></script>
 
   <body class="page"></body>
 </html>
+
+<!--
+  <blockquote class="card__text">
+      Живи как можешь, раз нельзя как хочется.
+    </blockquote>
+    <p class="card__author">Цецилий Стаций</p>
+-->

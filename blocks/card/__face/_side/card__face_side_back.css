@@ -1,0 +1,9 @@
+.card__face_side_back {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/images.linnlive.com/088a95d76368918abeed07e2548bca7d/f0e00233-8bb8-4d1d-86b5-f9e30e8f9591.jpg");
+  background-repeat: repeat;
+  background-size: 80%;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

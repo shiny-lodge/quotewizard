@@ -1,0 +1,18 @@
+@import url("__face/card__face.css");
+@import url("__quote-text-container/card__quote-text-container.css");
+@import url("__quote-text/card__quote-text.css");
+@import url("__quote-author-container/card__quote-author-container.css");
+@import url("__quote-author/card__quote-author.css");
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.8s;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}

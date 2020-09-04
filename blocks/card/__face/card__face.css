@@ -1,0 +1,14 @@
+@import url("_side/card__face_side_front.css");
+@import url("_side/card__face_side_back.css");
+
+.card__face {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: grid;
+  grid-auto-rows: 4fr 1fr;
+  grid-row-gap: 10px;
+}

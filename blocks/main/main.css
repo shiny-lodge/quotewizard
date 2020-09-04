@@ -1,0 +1,7 @@
+.main {
+  width: 280px;
+  height: 480px;
+  padding: 0;
+  margin: 18px auto 0;
+  perspective: 1000px;
+}
